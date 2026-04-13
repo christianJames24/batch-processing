@@ -47,3 +47,7 @@ py -3 sync_main.py
 - [main.py](./main.py) - minimal batch submit and wait-for-results example
 - [sync_main.py](./sync_main.py) - synchronous Responses API version for timing comparison
 - [.env](./.env) - local environment variables
+
+## OTHER SOURCES:
+https://help.openai.com/en/articles/9197833-batch-api-faq
+https://research-it.wharton.upenn.edu/programming/using-openai-batch-api/
