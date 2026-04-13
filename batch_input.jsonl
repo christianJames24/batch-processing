@@ -1,0 +1,2 @@
+{"custom_id": "demo-1", "method": "POST", "url": "/v1/responses", "body": {"model": "gpt-5.4-mini", "input": "Reply in one short sentence: what is batch processing?"}}
+{"custom_id": "demo-2", "method": "POST", "url": "/v1/responses", "body": {"model": "gpt-5.4-mini", "input": "Reply in one short sentence: why might someone use the Batch API?"}}
