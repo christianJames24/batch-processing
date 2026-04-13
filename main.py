@@ -17,8 +17,8 @@ def elapsed_label(start_time):
 
 def build_demo_requests():
     prompts = [
-        "Reply in one short sentence: what is batch processing?",
-        "Reply in one short sentence: why might someone use the Batch API?",
+        "Reply in one short sentence: what is batch processing and what are the advantages and disadvantages of it (OPENAI)?",
+        "Analysis on oshawott and piplup.",
     ]
 
     requests = []

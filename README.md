@@ -30,6 +30,12 @@ Submit the batch and wait for completion:
 py -3 main.py
 ```
 
+Run the same prompts synchronously so you can compare timings:
+
+```powershell
+py -3 sync_main.py
+```
+
 ## Notes
 
 - Batch jobs are asynchronous, so they are not the fastest way to get an immediate response.
@@ -39,4 +45,5 @@ py -3 main.py
 ## Files
 
 - [main.py](./main.py) - minimal batch submit and wait-for-results example
+- [sync_main.py](./sync_main.py) - synchronous Responses API version for timing comparison
 - [.env](./.env) - local environment variables
