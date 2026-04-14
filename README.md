@@ -33,19 +33,19 @@ py -3 main.py
 Check the status of an existing batch by ID:
 
 ```powershell
-py -3 main.py --batch-id batch_69de6413334c81909408b2c677e77225
+py -3 main.py --batch-id batch_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 Watch an existing batch until it reaches a terminal status:
 
 ```powershell
-py -3 main.py --batch-id batch_69de6413334c81909408b2c677e77225 --watch
+py -3 main.py --batch-id batch_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --watch
 ```
 
 Change polling frequency while waiting:
 
 ```powershell
-py -3 main.py --batch-id batch_69de6413334c81909408b2c677e77225 --watch --poll-seconds 30
+py -3 main.py --batch-id batch_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --watch --poll-seconds 30
 ```
 
 Run the same prompts synchronously so you can compare timings:
