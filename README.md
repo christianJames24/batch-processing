@@ -30,6 +30,24 @@ Submit the batch and wait for completion:
 py -3 main.py
 ```
 
+Check the status of an existing batch by ID:
+
+```powershell
+py -3 main.py --batch-id batch_69de6413334c81909408b2c677e77225
+```
+
+Watch an existing batch until it reaches a terminal status:
+
+```powershell
+py -3 main.py --batch-id batch_69de6413334c81909408b2c677e77225 --watch
+```
+
+Change polling frequency while waiting:
+
+```powershell
+py -3 main.py --batch-id batch_69de6413334c81909408b2c677e77225 --watch --poll-seconds 30
+```
+
 Run the same prompts synchronously so you can compare timings:
 
 ```powershell
@@ -39,6 +57,7 @@ py -3 sync_main.py
 ## Notes
 
 - Batch jobs are asynchronous, so they are not the fastest way to get an immediate response.
+- `main.py` now prints `Batch ID: ...` so you can re-attach to the same job later.
 - This repo is just a minimal example, not a production workflow.
 - The script writes `batch_input.jsonl` in the project folder before uploading it.
 
