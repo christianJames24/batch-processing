@@ -54,10 +54,23 @@ Run the same prompts synchronously so you can compare timings:
 py -3 sync_main.py
 ```
 
+Look up a single Responses API object by response ID:
+
+```powershell
+py -3 response_status.py resp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+Show any returned text for that response when available:
+
+```powershell
+py -3 response_status.py resp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --show-text --show-tool-calls
+```
+
 ## Notes
 
 - Batch jobs are asynchronous, so they are not the fastest way to get an immediate response.
 - `main.py` now prints `Batch ID: ...` so you can re-attach to the same job later.
+- `response_status.py` is separate from the Batch API examples. It retrieves a single `/v1/responses` object by `response_id` and does not create, track, or read batch jobs.
 - This repo is just a minimal example, not a production workflow.
 - The script writes `batch_input.jsonl` in the project folder before uploading it.
 
@@ -65,6 +78,7 @@ py -3 sync_main.py
 
 - [main.py](./main.py) - minimal batch submit and wait-for-results example
 - [sync_main.py](./sync_main.py) - synchronous Responses API version for timing comparison
+- [response_status.py](./response_status.py) - separate helper to retrieve one response by `response_id` outside the Batch workflow
 - [.env](./.env) - local environment variables
 
 ## OTHER SOURCES:
